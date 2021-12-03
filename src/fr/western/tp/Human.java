@@ -3,10 +3,11 @@ package fr.western.tp;
 public class Human {
 
     private String name;
-    private String beverage = "eau";
+    private String beverage;
 
     public Human(String name) {
         this.name = name;
+        this.beverage = "eau";
     }
 
     public String getName() {
@@ -22,7 +23,7 @@ public class Human {
     }
 
     public void introduce() {
-        System.out.println("Je m'appelle " + this.name + ", ma boisson préféré c'est : " + this.beverage);
+        this.say("Je m'appelle " + this.name + ", ma boisson préféré c'est : " + this.beverage);
     }
 
     public void drink() {
