@@ -28,7 +28,7 @@ public class Human {
     }
 
     public void introduce() {
-        this.say("Je m'appelle " + this.name + ", ma boisson préféré c'est : " + this.beverage);
+        this.say("Je m'appelle " + this.name + ", ma boisson préféré c'est le " + this.beverage);
     }
 
     public void drink() {

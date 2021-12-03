@@ -17,7 +17,7 @@ public class Bandit extends Human {
 
     @Override
     public String getName() {
-        return super.getName() + this.look;
+        return super.getName() + " le " + this.look;
     }
 
     @Override
