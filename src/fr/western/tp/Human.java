@@ -10,6 +10,11 @@ public class Human {
         this.beverage = "eau";
     }
 
+    public Human(String name, String beverage) {
+        this.name = name;
+        this.beverage = beverage;
+    }
+
     public String getName() {
         return this.name;
     }

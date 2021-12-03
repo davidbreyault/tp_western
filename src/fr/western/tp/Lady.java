@@ -5,9 +5,20 @@ public class Lady extends Human {
     private Boolean free;
 
     public Lady(String name, String dressColor) {
-        super(name);
+        super(name, "lait");
         this.dressColor = dressColor;
         this.free = true;
+    }
+
+    @Override
+    public String getName() {
+        return "Miss " + super.getName();
+    }
+
+    @Override
+    public void introduce() {
+        super.introduce();
+        say("Je porte une robe de couleur " + this.dressColor);
     }
 
     public void getKidnap() {

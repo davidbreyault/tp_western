@@ -6,7 +6,7 @@ public class Cowboy extends Human {
     private String setting;
 
     public Cowboy(String name) {
-        super(name);
+        super(name, "whisky");
         this.popularity = 0;
         this.setting = "Vaillant";
     }

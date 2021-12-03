@@ -8,11 +8,23 @@ public class Bandit extends Human {
     private Boolean inJail;
 
     public Bandit(String name) {
-        super(name);
+        super(name, "Tord-Boyaux");
         this.look = "méchant";
         this.numKidnapedLadies = 0;
         this.reward = 100;
         this.inJail = false;
+    }
+
+    @Override
+    public String getName() {
+        return super.getName() + this.look;
+    }
+
+    @Override
+    public void introduce() {
+        super.introduce();
+        say("J'ai l'air " + this.look + " et j'ai déjà kidnappé " + this.numKidnapedLadies + " dames.");
+        say("Ma tête est mise a prix à " + this.reward + "$");
     }
 
     public void getRewardAmount() {
